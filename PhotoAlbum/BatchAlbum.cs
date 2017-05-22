@@ -32,6 +32,9 @@ namespace PhotoAlbum
 
         public void PrintPhotos(List<Photo> photos)
         {
+            if (photos == null)
+                return;
+
             foreach (var photo in photos)
             {
                 Console.WriteLine(photo.Id + " " + photo.Title);

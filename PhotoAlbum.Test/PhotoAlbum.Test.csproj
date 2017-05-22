@@ -78,6 +78,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="BatchAlbumTest.cs" />
     <Compile Include="PhotoAlbumProcessorTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -89,6 +90,10 @@
     <ProjectReference Include="..\PhotoAlbum.Application\PhotoAlbum.Application.csproj">
       <Project>{2a866bdb-6448-4ea1-ac1e-9f9d123cf7be}</Project>
       <Name>PhotoAlbum.Application</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PhotoAlbum\PhotoAlbum.csproj">
+      <Project>{5de3e43a-ce59-440b-a716-1d7c9038ac4d}</Project>
+      <Name>PhotoAlbum</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
